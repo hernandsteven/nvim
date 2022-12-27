@@ -29,6 +29,7 @@ return packer.startup(function(use)
 	--my plugins
 	use("wbthomason/packer.nvim") --nvim
 	use("joshdick/onedark.vim") -- colorscheme: onedark
+	use("bluz71/vim-nightfly-colors")
 	use({ "svrana/neosolarized.nvim", requires = { "tjdevries/colorbuddy.nvim" } }) -- colorscheme: neosolarized
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 

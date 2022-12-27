@@ -3,7 +3,7 @@ if not status then
 	return
 end
 
-local lualine_theme = require("lualine.themes.papercolor_light")
+local lualine_theme = require("lualine.themes.nightfly")
 
 lualine.setup({
 	options = {
