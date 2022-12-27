@@ -37,7 +37,7 @@ Group.new("NvimTreeGitStaged", colors.green, nil)
 Group.new("NvimTreeGitDirty", colors.red, nil)
 
 --BarBar highlight groups
-Group.new("BufferTabpageFill", nil, nil)
+--Group.new("BufferTabpageFill", nil, nil)
 --Group.new("BufferCurrent", colors.yellow, nil)
 
 --Copilot highlight groups
