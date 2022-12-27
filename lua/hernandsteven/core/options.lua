@@ -3,8 +3,8 @@ local cmd = vim.cmd
 local exec = vim.api.nvim_exec -- Execute Vimscript
 local g = vim.g --Global Variable
 
--- add padding for nvim tree and barbar
-vim.g.nightflyTransparent = true
+-- Make colorscheme background transparent
+g.nightflyTransparent = true
 
 vim.api.nvim_create_autocmd("BufWinEnter", {
 	pattern = "*",
