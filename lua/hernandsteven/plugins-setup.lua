@@ -46,7 +46,13 @@ return packer.startup(function(use)
 
 	-- fuzzy finding
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
+	use({
+		"nvim-telescope/telescope.nvim",
+		branch = "0.1.x",
+		requires = { { "nvim-lua/plenary.nvim" }, {
+			"kdheepak/lazygit.nvim",
+		} },
+	})
 
 	--autocompletion
 	use("hrsh7th/nvim-cmp")
@@ -80,6 +86,8 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
+
+	use("kdheepak/lazygit.nvim")
 	--gitsigns
 	use("lewis6991/gitsigns.nvim")
 	-- git fugitive
