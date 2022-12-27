@@ -21,7 +21,7 @@ Color.new("background", "#282c34")
 --Groups
 --Group.new("IndentBlanklineChar", groups.Comment.fg)
 Group.new("Normal", groups.Normal.fg:light())
-Group.new("CursorLine", colors.none, colors.base03:light(), styles.NONE, colors.base1)
+Group.new("CursorLine", colors.none, colors.base03:dark(), styles.NONE, colors.base1)
 Group.new("CursorLineNr", colors.yellow, colors.black, styles.NONE)
 Group.new("ModeMsg", groups.ModeMsg.fg:light(), colors.black)
 --Group.new("Visual", colors.none, colors.base03, styles.reverse)
