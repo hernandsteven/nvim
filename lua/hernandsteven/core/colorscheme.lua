@@ -26,7 +26,7 @@ Group.new("CursorLineNr", colors.yellow, colors.black, styles.NONE)
 Group.new("ModeMsg", groups.ModeMsg.fg:light(), colors.black)
 --Group.new("Visual", colors.none, colors.base03, styles.reverse)
 --Group.new("Keyword", groups.ModeMsg.fg:light())
---Group.new("Function", colors.yellow)
+Group.new("Function", colors.yellow)
 --Group.new("Operator", groups.ModeMsg.fg:light())
 
 --NvimTree Git highlight groups
