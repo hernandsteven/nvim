@@ -15,14 +15,18 @@ vim.cmd([[colorscheme nightfly]])
 --Setting up colorbuddy
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
---Highlight Group Cutomization
 --Colors
-Color.new("black", "#000000")
--- teal color
 Color.new("babyblue", "#3FC5FF")
 Color.new("background", "#282c34")
 
+--Highlight Group Cutomization
+
+-- remove color from tab fill and separator
+vim.cmd([[highlight BufferTabpageFill ctermbg=255 ctermfg=254 ]])
+vim.cmd([[highlight NvimTreeWinSeparator ctermbg=255 ctermfg=254 ]])
+
 --Groups
+
 --Group.new("IndentBlanklineChar", groups.Comment.fg)
 --Group.new("Normal", groups.Normal.fg:light())
 --Group.new("CursorLine", colors.none, colors.base03:light(), styles.NONE, colors.base1)
@@ -33,9 +37,10 @@ Group.new("CursorLineNr", colors.gold, nil, styles.NONE)
 --Group.new("Function", colors.yellow)
 --Group.new("Operator", groups.ModeMsg.fg:light())
 
+--BarBar highlight groups
+
 --NvimTree highlight groups
 Group.new("NvimTreeNormal", nil, nil) -- Background color for nvim tree
-Group.new("NvimTreeWinSeparator", nil, nil, nil) -- Seperator between nvim tree and other windows
 Group.new("NvimTreeIndentMarker", colors.babyblue:dark():dark():dark()) -- Arrow color for folders
 Group.new("NvimTreeCursorLine", colors.gray) -- cursor line color
 Group.new("NvimTreeEndOfBuffer", nil, nil) -- ~ at the end of buffer
@@ -43,9 +48,6 @@ Group.new("NvimTreeEndOfBuffer", nil, nil) -- ~ at the end of buffer
 Group.new("NvimTreeGitDeleted", colors.red, nil)
 Group.new("NvimTreeGitStaged", colors.green, nil)
 Group.new("NvimTreeGitDirty", colors.red, nil)
-
---BarBar highlight groups
-Group.new("BufferTabpageFill", nil, nil) -- background color for space between tabs
 
 --Copilot highlight groups
 Group.new("CopilotSuggestion", colors.yellow, nil, styles.undercurl)
