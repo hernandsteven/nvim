@@ -7,9 +7,6 @@ end
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
--- highlight group for arrow
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]]) -- changing arrow color to blue
-
 -- Protected call for icons
 local ok, icons = pcall(require, "nvim-web-devicons")
 if not ok then
