@@ -49,3 +49,6 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 -- lazy git
 keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>")
+--toggle term
+keymap.set("n", "<c-\\>", "<cmd>ToggleTerm<cr>") --Open terminal
+keymap.set("t", "kj", "<c-\\><c-n>") --Change to normal mode in terminal
