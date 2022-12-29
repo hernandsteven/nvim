@@ -41,8 +41,9 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- autopairs
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autotag
 
-	use("kyazdani42/nvim-web-devicons") -- icons
-	use("nvim-lualine/lualine.nvim") -- statusline
+	use("kyazdani42/nvim-web-devicons") -- Icons
+	-- use("nvim-lualine/lualine.nvim") -- Lualine
+	use("feline-nvim/feline.nvim")
 	use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" }) -- tabbar
 
 	-- fuzzy finding

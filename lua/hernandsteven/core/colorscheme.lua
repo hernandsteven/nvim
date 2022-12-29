@@ -22,22 +22,21 @@ Color.new("background", "#282c34")
 --Highlight Group Cutomization
 
 -- remove color from tab fill and separator
-vim.cmd([[highlight BufferTabpageFill ctermbg=255 ctermfg=254 ]])
-vim.cmd([[highlight NvimTreeWinSeparator ctermbg=255 ctermfg=254 ]])
-
+vim.cmd([[highlight BufferTabpageFill ctermbg=255 ctermfg=255 ]])
+vim.cmd([[highlight NvimTreeWinSeparator ctermbg=255 ctermfg=255 ]])
 --Groups
 
---Group.new("IndentBlanklineChar", groups.Comment.fg)
---Group.new("Normal", groups.Normal.fg:light())
---Group.new("CursorLine", colors.none, colors.base03:light(), styles.NONE, colors.base1)
+--Status Line
+Group.new("StatusLine", nil, nil)
+Group.new("StatusLineNC", nil, nil)
 Group.new("CursorLineNr", colors.gold, nil, styles.NONE)
---Group.new("ModeMsg", groups.ModeMsg.fg:light(), colors.black)
---Group.new("Visual", colors.none, colors.base03, styles.reverse)
---Group.new("Keyword", groups.ModeMsg.fg:light())
---Group.new("Function", colors.yellow)
---Group.new("Operator", groups.ModeMsg.fg:light())
 
 --BarBar highlight groups
+Group.new("BufferVisible", nil, nil)
+Group.new("BufferDefaultVisibleSign", nil, nil)
+Group.new("BufferCurrent", nil, nil)
+Group.new("BufferCurrentSign", nil, nil)
+Group.new("BufferVisibleSign", nil, nil)
 
 --NvimTree highlight groups
 Group.new("NvimTreeNormal", nil, nil) -- Background color for nvim tree
