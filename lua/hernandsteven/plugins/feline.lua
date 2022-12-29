@@ -54,7 +54,7 @@ component.vim_mode = {
 			name = "NeovimModeHLColor",
 		}
 	end,
-	left_sep = "left_rounded",
+	left_sep = "block",
 	right_sep = "block",
 }
 
